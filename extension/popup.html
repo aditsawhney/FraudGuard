@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <span class="header-title">fraud_detector</span>
+      <span class="header-sub" id="job-label">—</span>
+    </div>
+
+    <div class="risk-band" id="risk-band">
+      <div class="risk-label" id="risk-label">scanning...</div>
+      <div class="risk-score" id="risk-score">—</div>
+      <div class="risk-verdict" id="risk-verdict">waiting for result</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">flags[]</div>
+      <div id="flags-list">
+        <div class="flag-placeholder">// analysing job posting</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="status-row">
+        <span class="status-dot" id="status-dot"></span>
+        <span id="status-text">connecting...</span>
+      </div>
+      <span class="version">v1.0</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

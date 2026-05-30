@@ -1,0 +1,29 @@
+{
+  "total_rows": 2118,
+  "label_distribution": {
+    "1": 1166,
+    "0": 952
+  },
+  "source_distribution": {
+    "emscad": 866,
+    "emscad_real": 500,
+    "synthetic_legitimate": 452,
+    "synthetic_indian": 300
+  },
+  "archetype_distribution": {
+    "legitimate": 952,
+    "emscad_fraud": 866,
+    "overseas_job_scam": 50,
+    "identity_harvest": 50,
+    "bpo_bulk_scam": 50,
+    "wfh_task_scam": 50,
+    "fake_mnc_impersonation": 50,
+    "placement_consultancy_fee": 50
+  },
+  "splits": {
+    "train": 1482,
+    "val": 318,
+    "test": 318
+  },
+  "random_state": 42
+}

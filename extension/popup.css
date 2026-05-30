@@ -1,0 +1,156 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 320px;
+  font-family: sans-serif;
+  font-size: 13px;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.header {
+  padding: 10px 14px;
+  border-bottom: 0.5px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header-sub {
+  font-size: 11px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.risk-band {
+  padding: 14px 16px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.risk-band.high   { background: #FCEBEB; }
+.risk-band.medium { background: #FAEEDA; }
+.risk-band.low    { background: #EAF3DE; }
+
+.risk-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: #888;
+}
+
+.risk-band.high   .risk-label { color: #A32D2D; }
+.risk-band.medium .risk-label { color: #854F0B; }
+.risk-band.low    .risk-label { color: #3B6D11; }
+
+.risk-score {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: #aaa;
+}
+
+.risk-band.high   .risk-score { color: #E24B4A; }
+.risk-band.medium .risk-score { color: #BA7517; }
+.risk-band.low    .risk-score { color: #639922; }
+
+.risk-verdict {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.risk-band.high   .risk-verdict { color: #791F1F; }
+.risk-band.medium .risk-verdict { color: #633806; }
+.risk-band.low    .risk-verdict { color: #27500A; }
+
+.section {
+  padding: 10px 14px;
+  border-top: 0.5px solid #e0e0e0;
+}
+
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 7px;
+}
+
+.flag-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.flag-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.flag-dot.red   { background: #E24B4A; }
+.flag-dot.amber { background: #BA7517; }
+
+.flag-placeholder {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #aaa;
+  font-style: italic;
+  padding: 4px 0;
+}
+
+.footer {
+  padding: 8px 14px;
+  border-top: 0.5px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #888;
+}
+
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.status-dot.ready  { background: #639922; }
+.status-dot.local  { background: #BA7517; }
+.status-dot.error  { background: #E24B4A; }
+
+.version {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #ccc;
+}

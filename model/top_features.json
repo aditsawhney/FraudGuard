@@ -1,0 +1,166 @@
+{
+  "top_fraud_signals": [
+    {
+      "feature": "000",
+      "coefficient": 1.3439672648774181
+    },
+    {
+      "feature": "data entry",
+      "coefficient": 1.231228893895389
+    },
+    {
+      "feature": "entry",
+      "coefficient": 1.200238707884257
+    },
+    {
+      "feature": "assistant",
+      "coefficient": 1.116573449117975
+    },
+    {
+      "feature": "indian_total_flags",
+      "coefficient": 1.047825971318891
+    },
+    {
+      "feature": "communication skills",
+      "coefficient": 0.8647780968345739
+    },
+    {
+      "feature": "earn",
+      "coefficient": 0.8315875764865641
+    },
+    {
+      "feature": "good communication",
+      "coefficient": 0.798138929841828
+    },
+    {
+      "feature": "administrative",
+      "coefficient": 0.7627260503314269
+    },
+    {
+      "feature": "freshers",
+      "coefficient": 0.7564744144777603
+    },
+    {
+      "feature": "indian_fee_language",
+      "coefficient": 0.7379257327346309
+    },
+    {
+      "feature": "no",
+      "coefficient": 0.7362370232604138
+    },
+    {
+      "feature": "basic",
+      "coefficient": 0.7100380698276061
+    },
+    {
+      "feature": "good",
+      "coefficient": 0.6710146384935415
+    },
+    {
+      "feature": "required",
+      "coefficient": 0.6637629935121263
+    },
+    {
+      "feature": "indian_mnc_impersonation",
+      "coefficient": 0.6505551266153825
+    },
+    {
+      "feature": "experience required",
+      "coefficient": 0.6461372012161083
+    },
+    {
+      "feature": "work from",
+      "coefficient": 0.6304896846933082
+    },
+    {
+      "feature": "from home",
+      "coefficient": 0.6296741489291129
+    },
+    {
+      "feature": "computer",
+      "coefficient": 0.6068406770467569
+    }
+  ],
+  "top_real_signals": [
+    {
+      "feature": "software",
+      "coefficient": -1.0641571783901955
+    },
+    {
+      "feature": "web",
+      "coefficient": -1.0536426999911328
+    },
+    {
+      "feature": "that",
+      "coefficient": -1.0356359135622009
+    },
+    {
+      "feature": "about",
+      "coefficient": -0.9707802702540982
+    },
+    {
+      "feature": "what",
+      "coefficient": -0.9575185911764585
+    },
+    {
+      "feature": "new",
+      "coefficient": -0.9501403625561333
+    },
+    {
+      "feature": "digital",
+      "coefficient": -0.9491063905415066
+    },
+    {
+      "feature": "we re",
+      "coefficient": -0.9267026664552488
+    },
+    {
+      "feature": "our",
+      "coefficient": -0.9067096454712847
+    },
+    {
+      "feature": "develop",
+      "coefficient": -0.9013698956500845
+    },
+    {
+      "feature": "it",
+      "coefficient": -0.884787016754725
+    },
+    {
+      "feature": "collaborate",
+      "coefficient": -0.8845862033631365
+    },
+    {
+      "feature": "about the",
+      "coefficient": -0.8837859547632729
+    },
+    {
+      "feature": "growth",
+      "coefficient": -0.8837246666192794
+    },
+    {
+      "feature": "collaborate with",
+      "coefficient": -0.8654242974719643
+    },
+    {
+      "feature": "growing",
+      "coefficient": -0.86049433412527
+    },
+    {
+      "feature": "re",
+      "coefficient": -0.8462070549072794
+    },
+    {
+      "feature": "media",
+      "coefficient": -0.8324948644084867
+    },
+    {
+      "feature": "implement",
+      "coefficient": -0.8114591468575846
+    },
+    {
+      "feature": "development",
+      "coefficient": -0.798755759939146
+    }
+  ]
+}
