@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://fraud-job-detector-1mdz.onrender.com";
 
 let latestResult = null;
 
