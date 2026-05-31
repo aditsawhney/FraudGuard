@@ -1,6 +1,6 @@
 # Indian Job Fraud Detector
 
-A machine learning system that detects fraudulent job postings in the Indian market — deployed as a live API, Chrome extension, and public web interface.
+A machine learning system that detects fraudulent job postings in the Indian market - deployed as a live API, Chrome extension, and public web interface.
 
 **Live demo:** https://aditsawhney.github.io/Fraud-Job-Detector
 
@@ -8,7 +8,7 @@ A machine learning system that detects fraudulent job postings in the Indian mar
 
 ## Overview
 
-Job fraud is a significant problem in India — scams involving upfront registration fees, Aadhaar/PAN collection, WhatsApp-only contacts, and MNC impersonation are widespread. No publicly labeled dataset of Indian job fraud existed, so this project builds one from scratch and trains a model on it.
+Job fraud is a significant problem in India. Scams involving upfront registration fees, Aadhaar/PAN collection, WhatsApp-only contacts, and MNC impersonation are widespread. No publicly labeled dataset of Indian job fraud existed, so this project builds one from scratch and trains a model on it.
 
 The system combines TF-IDF text analysis with 15 hand-engineered India-specific fraud signals, wrapped in a FastAPI backend and surfaced through a Chrome extension that runs inline on LinkedIn job pages.
 
@@ -26,7 +26,7 @@ The system combines TF-IDF text analysis with 15 hand-engineered India-specific 
 
 Evaluated on a held-out test set of 318 rows.
 
-**Caveat:** the real class is majority synthetic. These metrics likely overstate real-world performance — no evaluation on genuine LinkedIn postings has been done yet.
+**Caveat:** the real class is majority synthetic. These metrics likely overstate real-world performance - no evaluation on genuine LinkedIn postings has been done yet.
 
 ### Evaluation charts
 
@@ -190,8 +190,8 @@ Full docs: https://fraud-job-detector-1mdz.onrender.com/docs
 
 - Metrics are measured on a partially synthetic dataset and likely overstate real-world performance.
 - Short legitimate company names (EY, TCS) occasionally trip the `vague_company` feature.
-- LinkedIn's search results layout (`/jobs/search-results/`) uses obfuscated class names and is not supported — the extension prompts users to open the full job view instead.
-- Render free tier spins down after inactivity — first request after idle takes ~30 seconds. The extension and website fall back to local heuristics during this time.
+- LinkedIn's search results layout (`/jobs/search-results/`) uses obfuscated class names and is not supported. The extension prompts users to open the full job view instead.
+- Render free tier spins down after inactivity - first request after idle takes ~30 seconds. The extension and website fall back to local heuristics during this time.
 
 ---
 
