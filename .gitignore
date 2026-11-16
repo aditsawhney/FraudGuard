@@ -9,8 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-# Model (too large for GitHub, regenerate with train.py)
-model/model.pkl
 
 # Environment
 .env
