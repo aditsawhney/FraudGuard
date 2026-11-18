@@ -5,7 +5,6 @@ const VERDICT = {
   };
   
   function render(result) {
-    console.log("render called with:", result);
     if (!result) {
       document.getElementById("flags-list").innerHTML =
         `<div class="flag-placeholder">// no result yet — open a LinkedIn job post</div>`;

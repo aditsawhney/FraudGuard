@@ -26,7 +26,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       .then((data) => {
         const result = { ...data, source: "model", title: message.payload.title, company: message.payload.company };
         latestResult = result;
-        console.log("stored result:", result);
         sendResponse(result);
       })
       .catch(() => sendResponse({ error: true }));

@@ -1,7 +1,3 @@
-console.log("content.js loaded");
-
-const API_URL = "http://127.0.0.1:8000";
-
 let lastProcessedUrl = "";
 
 function safeSend(message) {
@@ -13,21 +9,16 @@ function safeSend(message) {
 }
 
 function analyze() {
-  console.log("analyze() called, path:", window.location.pathname);
   if (!LinkedInScraper.isJobPage()) {
-    console.log("isJobPage() returned false, bailing");
     return;
   }
   if (window.location.href === lastProcessedUrl) {
-    console.log("same URL, bailing");
     return;
   }
   lastProcessedUrl = window.location.href;
 
   const jobData = LinkedInScraper.scrape();
-  console.log("scraped:", jobData);
   if (!jobData || !jobData.title) {
-    console.log("no title, bailing");
     return;
   }
   
