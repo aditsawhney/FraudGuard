@@ -69,7 +69,7 @@ EMSCAD adds real human-written Western scam postings to diversify the fraud clas
 
 These are hstacked into one sparse matrix and fed into a `LogisticRegression` classifier (`class_weight='balanced'`, C=1.0).
 
-Logistic regression was chosen deliberately: `coef_` gives direct feature-level explainability, inference is fast enough for Render's free tier, and the dataset (2,118 rows) is too small to justify deep models.
+Logistic regression was chosen deliberately: `coef_` gives direct feature-level explainability, inference is fast enough for a small CPU-only container, and the dataset (2,118 rows) is too small to justify deep models.
 
 ### 15 Indian fraud signals
 
@@ -156,7 +156,7 @@ Open `http://localhost:8080`.
 
 ## API
 
-`POST /predict` — https://fraud-job-detector-1mdz.onrender.com
+`POST /predict` — https://fraudguard-production-c4a437a7.up.railway.app
 
 Request:
 ```json
@@ -184,7 +184,7 @@ Response:
 }
 ```
 
-Full docs: https://fraud-job-detector-1mdz.onrender.com/docs
+Full docs: https://fraudguard-production-c4a437a7.up.railway.app/docs
 
 ---
 
@@ -193,7 +193,7 @@ Full docs: https://fraud-job-detector-1mdz.onrender.com/docs
 - Metrics are measured on a partially synthetic dataset and likely overstate real-world performance.
 - Short legitimate company names (EY, TCS) occasionally trip the `vague_company` feature.
 - LinkedIn's search results layout (`/jobs/search-results/`) uses obfuscated class names and is not supported. The extension prompts users to open the full job view instead.
-- Render free tier spins down after inactivity - first request after idle takes ~30 seconds. The extension and website fall back to local heuristics during this time.
+- The backend runs on Railway. If it is unreachable, the extension and website fall back to local heuristics.
 
 ---
 

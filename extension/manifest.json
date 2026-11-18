@@ -9,7 +9,7 @@
     "host_permissions": [
     "https://www.linkedin.com/*",
     "http://127.0.0.1:8000/*",
-    "https://fraud-job-detector-1mdz.onrender.com/*"
+    "https://fraudguard-production-c4a437a7.up.railway.app/*"
     ],
     
     "background": {

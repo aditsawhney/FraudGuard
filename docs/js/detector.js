@@ -1,4 +1,4 @@
-const API_URL = 'https://fraud-job-detector-1mdz.onrender.com/predict';
+const API_URL = 'https://fraudguard-production-c4a437a7.up.railway.app/predict';
 
 const EXAMPLES = {
   fraud: {
@@ -174,7 +174,7 @@ async function analyse() {
     document.getElementById('result-content').innerHTML = `
       <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:380px;gap:10px;text-align:center;padding:40px;">
         <p style="font-weight:500">API unreachable</p>
-        <p style="font-size:0.82rem;color:var(--text-muted)">The Render backend may be cold-starting (~30s). Try again shortly.</p>
+        <p style="font-size:0.82rem;color:var(--text-muted)">Could not reach the API. Try again shortly.</p>
         <p style="font-size:0.75rem;font-family:var(--font-mono);color:var(--text-muted)">${err.message}</p>
       </div>`;
   }

@@ -1,4 +1,4 @@
-const API_URL = "https://fraud-job-detector-1mdz.onrender.com";
+const API_URL = "https://fraudguard-production-c4a437a7.up.railway.app";
 
 let latestResult = null;
 
